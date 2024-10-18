@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clickable Photo with Title and Animation</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* Center content vertically in the viewport */
+            background-color: #f4f4f4; /* Light background color */
+            margin: 0; /* Remove default margin */
+            text-align: center; /* Center text horizontally */
+            position: relative; /* Positioning context for the logout link */
+        }
+        h1 {
+            margin: 0; /* Remove default margin */
+            font-size: 24px; /* Header size */
+            font-weight: bold; /* Bold font for header */
+        }
+        h2 {
+            margin: 5px 0; /* Add some spacing between headings */
+            font-size: 20px; /* Subheader size */
+            color: #555; /* Darker color for subheader */
+        }
+        .logout {
+            position: absolute; /* Position the logout link in the upper right */
+            top: 20px; /* Distance from the top */
+            right: 20px; /* Distance from the right */
+            font-size: 14px; /* Font size for the logout link */
+            color: #007BFF; /* Blue color for the link */
+            text-decoration: none; /* Remove underline */
+        }
+        .logout:hover {
+            text-decoration: underline; /* Underline on hover */
+        }
+        .photo-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px; /* Space between header and photo */
+        }
+        .photo {
+            width: 100px; /* Adjust the width as needed */
+            height: auto;
+            transition: transform 0.3s ease; /* Smooth transition for the animation */
+        }
+        .photo:hover {
+            transform: scale(1.1); /* Scale up the image on hover */
+        }
+        .title {
+            margin-top: 10px;
+            font-size: 14px;
+            font-weight: bold;
+            text-align: center;
+            color: #333; /* Dark color for title */
+        }
+    </style>
+</head>
+<body>
+    <a href="https://script.google.com/macros/s/AKfycbz6IVMseK_Y9DCNa5TJYYfZ-FyRzIddvCFx_RRdvcbScvN74G1vH8hMTf_-jrEotuLj/exec" class="logout">Log Out</a>
+    <header>
+        <h1>WELCOME,</h1>
+        <h2>CHASE MEGA CORPORATION</h2>
+        <h2>WHAT WOULD YOU LIKE TO VIEW?</h2>
+    </header>
+    <div class="photo-container">
+        <a href="https://lookerstudio.google.com/reporting/2e9d551b-4e2d-481b-a097-dd5d6f5f4bea">
+            <img src="https://cdn-icons-png.flaticon.com/128/10842/10842949.png" alt="Photo 1" class="photo">
+        </a>
+        <div class="title">CLAIMS REPORT</div>
+    </div>
+</body>
+</html>
